@@ -27,6 +27,7 @@ program
   .parse(process.argv);
 
 const defaults = {
+  skin: 'cream',
   input: '',
   output: '',
 };
@@ -43,15 +44,30 @@ const specification = {
 };
 
 const declaration = {
-  theme: 'tint',
+  theme: options.skin,
+
+  /*
+    Selectror Mapping,
+
+  */
+
   selectors: {
-         page: ['.html'],
+  /*    SELECTOR MAPPING    */
+  /* SOURCE   | DESTINATION */
+  /* SELECTOR | SELECTOR */
+         page: ['.html'], /* MEANING: copy rules from .page in cream.css over to .html in dest.css*/
     container: ['.cgui-container'],
     component: ['.cgui-left', '.cgui-right'],
         label: ['.cgui-text', '.cgui-muted', 'html, input, button'],
         input: ['.cgui-command'],
        button: ['.cgui-execute'],
+  /*
+
+
+  */
+
   }
+
 }
 
 fs.readFile(options.input, (err, css) => {
