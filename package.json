@@ -1,6 +1,6 @@
 {
   "name": "recombinator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CSS recombination system. [Advanced Research, CLI, CSS]",
   "main": "index.js",
   "scripts": {
