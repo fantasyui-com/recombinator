@@ -21,11 +21,11 @@
     "autoprefixer": "^9.7.3",
     "commander": "^2.20.3",
     "cssnano": "^4.1.10",
-    "postcss": "^7.0.24",
+    "postcss": "^7.0.25",
     "postcss-color-function": "^4.1.0",
     "postcss-merge-rules": "^4.0.3",
     "precss": "^4.0.0",
-    "revolutionize": "^1.11.0",
+    "revolutionize": "^1.12.0",
     "web-fonts": "^1.7.0"
   }
 }
