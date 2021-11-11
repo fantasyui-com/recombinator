@@ -4,14 +4,15 @@
   "description": "CSS recombination system. [Advanced Research, CLI, CSS]",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; npm publish; git push;"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fantasyui-com/recombinator.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "fantasyui.com <fantasyui.com@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fantasyui-com/recombinator/issues"
@@ -20,7 +21,7 @@
   "dependencies": {
     "autoprefixer": "^9.7.4",
     "commander": "^2.20.3",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.10",
     "postcss": "^7.0.26",
     "postcss-color-function": "^4.1.0",
     "postcss-merge-rules": "^4.0.3",
